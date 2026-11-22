@@ -1,0 +1,47 @@
+[
+  {
+    "policy": "q_learning",
+    "seeds": 24,
+    "mean_reward": 95.21985657890013,
+    "ci95": 12.913552216187918,
+    "mean_energy": 657.2108333333332,
+    "mean_coverage": 0.5190538194444444,
+    "mean_violations": 0.0
+  },
+  {
+    "policy": "sarsa",
+    "seeds": 24,
+    "mean_reward": 109.43847717890043,
+    "ci95": 13.747748525609714,
+    "mean_energy": 771.4749999999998,
+    "mean_coverage": 0.5990017361111111,
+    "mean_violations": 0.0
+  },
+  {
+    "policy": "linear_q",
+    "seeds": 24,
+    "mean_reward": 110.03110241985564,
+    "ci95": 44.05230884759973,
+    "mean_energy": 826.5425000000004,
+    "mean_coverage": 0.7348958333333334,
+    "mean_violations": 7.625
+  },
+  {
+    "policy": "random",
+    "seeds": 24,
+    "mean_reward": 99.62780659592647,
+    "ci95": 4.852826914892737,
+    "mean_energy": 1349.969583333333,
+    "mean_coverage": 0.7203993055555555,
+    "mean_violations": 2.8333333333333335
+  },
+  {
+    "policy": "greedy",
+    "seeds": 24,
+    "mean_reward": 114.94170362058406,
+    "ci95": 4.230646992207813,
+    "mean_energy": 1485.9737499999992,
+    "mean_coverage": 0.7604383680555555,
+    "mean_violations": 0.0
+  }
+]

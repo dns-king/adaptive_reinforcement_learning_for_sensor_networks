@@ -1,0 +1,27 @@
+[package]
+name = "adaptive_sensor_rl"
+version = "0.1.0"
+edition = "2021"
+description = "CPU-first reinforcement learning research environment for constrained sensor networks"
+license = "MIT"
+
+[features]
+default = []
+# Reserved for a Burn-backed DQN implementation. Keeping it optional avoids a GPU or neural dependency for baselines.
+dqn = ["dep:burn"]
+
+[dependencies]
+nalgebra = "0.33"
+rand = "0.8"
+rand_chacha = "0.3"
+rayon = "1.10"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+burn = { version = "0.17", optional = true, default-features = false, features = ["ndarray"] }
+
+[dev-dependencies]
+criterion = "0.5"
+
+[[bench]]
+name = "environment"
+harness = false
